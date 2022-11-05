@@ -30,20 +30,25 @@
           <li class="nav-item">
             <a id="nav_termek_list" class="nav-link" href="?oldal=termek_list">Főoldal</a>
           </li>
-          <li class="nav-item">
-            <a id="nav_termek_insert" class="nav-link" href="?oldal=termek_insert">Termék hozzáadása</a>
-          </li>
+          <?php if (isset($_SESSION['felhasznalo'])) : ?>
+            <li class="nav-item">
+              <a id="nav_termek_insert" class="nav-link" href="?oldal=termek_insert">Termék hozzáadása</a>
+            </li>
+          <?php endif; ?>
         </ul>
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a id="nav_regisztracio" class="nav-link" href="?oldal=regisztracio">Regisztráció</a>
-          </li>
-          <li class="nav-item">
-            <a id="nav_bejelentkezes" class="nav-link" href="?oldal=bejelentkezes">Bejelentkezés</a>
-          </li>
-          <li class="nav-item">
-            <a id="nav_kijelentkezes" class="nav-link" href="?oldal=kijelentkezes">Kijelentkezés</a>
-          </li>
+          <?php if (!isset($_SESSION['felhasznalo'])) : ?>
+            <li class="nav-item">
+              <a id="nav_regisztracio" class="nav-link" href="?oldal=regisztracio">Regisztráció</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav_bejelentkezes" class="nav-link" href="?oldal=bejelentkezes">Bejelentkezés</a>
+            </li>
+          <?php else : ?>
+            <li class="nav-item">
+              <a id="nav_kijelentkezes" class="nav-link" href="?oldal=kijelentkezes">Kijelentkezés</a>
+            </li>
+          <?php endif; ?>
         </ul>
       </div>
     </div>

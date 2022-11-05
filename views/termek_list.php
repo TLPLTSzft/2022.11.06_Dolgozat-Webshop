@@ -1,6 +1,6 @@
 <div class="row">
-  <pre><?php print_r($termekek); ?></pre>
-  <pre><?php print_r($_SESSION); ?></pre>
+  <!-- <pre><?php print_r($termekek); ?></pre> -->
+  <!-- <pre><?php print_r($_SESSION); ?></pre> -->
   <?php foreach ($termekek as $termek) : ?>
     <div class="col-md-4">
       <div class="card">
