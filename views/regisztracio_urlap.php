@@ -9,12 +9,12 @@
 
       <div class="mb-3 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
         <label for="email_input" class="form-label">Email</label>
-        <input type="text" class="form-control" id="email_input" name="email">
+        <input type="email" class="form-control" id="email_input" name="email">
       </div>
 
       <div class="mb-3 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
         <label for="jelszo_input" class="form-label">Jelszó</label>
-        <input type="text" class="form-control" id="jelszo_input" name="jelszo">
+        <input type="password" class="form-control" id="jelszo_input" name="jelszo">
       </div>
 
       <div class="mb-3 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
@@ -24,12 +24,12 @@
 
       <div class="mb-3 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
         <label for="szuletesi_datum_input" class="form-label">Születési dátum</label>
-        <input type="text" class="form-control" id="szuletesi_datum_input" name="szuletesi_datum">
+        <input type="date" class="form-control" id="szuletesi_datum_input" name="szuletesi_datum">
       </div>
 
       <div class="mb-3 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
         <label for="iranyito_szam_input" class="form-label">Irányító szám</label>
-        <input type="text" class="form-control" id="iranyito_szam_input" name="iranyito_szam">
+        <input type="number" class="form-control" id="iranyito_szam_input" name="iranyito_szam">
       </div>
 
       <div class="mb-3 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
