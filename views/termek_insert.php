@@ -19,8 +19,8 @@
       </div>
 
       <div class="mb-3 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-        <label for="kep_input" class="form-label">Kép</label>
-        <textarea class="form-control" id="kep_input" rows="3" name="kep"></textarea>
+        <label for="kep_input" class="form-label">A file-t a 'project' ..\images mappájába kell elhelyezni és onnan lehet kiválasztani!</label>
+        <input type="file" id="kep_input" name="kep">
       </div>
 
     </div>
