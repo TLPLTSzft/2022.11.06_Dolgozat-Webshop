@@ -4,11 +4,10 @@ class FelhasznaloModel extends Adatbazis
 {
   public function regisztracio($felhasznalo_nev, $email, $jelszo, $teljes_nev, $szuletesi_datum, $iranyito_szam, $varos, $cim)
   {
-    $sql = "INSERT INTO felhasznalo(felhasznalo_nev, email, jelszo, teljes_nev, szuletesi_datum, iranyito_szam, varos, cim)
-    VALUES (?,?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO felhasznalo(felhasznalo_nev, email, jelszo, teljes_nev, szuletesi_datum, iranyito_szam, varos, cim) VALUES (?,?,?,?,?,?,?,?)";
     $stmt = $this->conn->prepare($sql);
     $hash = password_hash($jelszo, PASSWORD_DEFAULT);
-    $stmt->bind_param("ssssssss", $felhasznalo_nev, $email, $hash, $teljes_nev, $szuletesi_datum, $iranyito_szam, $varos, $cim);
+    $stmt->bind_param("sssssiss", $felhasznalo_nev, $email, $hash, $teljes_nev, $szuletesi_datum, $iranyito_szam, $varos, $cim);
     $stmt->execute();
   }
   public function bejelentkezes($felhasznalo_nev, $jelszo)
