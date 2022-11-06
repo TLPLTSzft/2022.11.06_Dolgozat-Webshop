@@ -2,22 +2,23 @@
 <form method="POST">
   <div class="container-fluid">
     <div class="row">
-      <div class="mb-3 col-lg-6 col-xl-4">
+
+      <div class="mb-3 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
         <label for="nev_input" class="form-label">Név</label>
         <input type="text" class="form-control" id="nev_input" name="nev">
       </div>
 
-      <div class="mb-3 col-lg-6 col-xl-4">
+      <div class="mb-3 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
         <label for="leiras_input" class="form-label">Leírás</label>
         <textarea class="form-control" id="leiras_input" rows="3" name="leiras"></textarea>
       </div>
 
-      <div class="mb-3 col-lg-6 col-xl-4">
+      <div class="mb-3 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
         <label for="ar_input" class="form-label">Ár</label>
         <input type="number" class="form-control" id="ar_input" name="ar">
       </div>
 
-      <div class="mb-3 col-lg-6 col-xl-4">
+      <div class="mb-3 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
         <label for="kep_input" class="form-label">Kép</label>
         <textarea class="form-control" id="kep_input" rows="3" name="kep"></textarea>
       </div>

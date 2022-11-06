@@ -10,6 +10,7 @@ class FelhasznaloModel extends Adatbazis
     $stmt->bind_param("sssssiss", $felhasznalo_nev, $email, $hash, $teljes_nev, $szuletesi_datum, $iranyito_szam, $varos, $cim);
     $stmt->execute();
   }
+
   public function bejelentkezes($felhasznalo_nev, $jelszo)
   {
     $sql = "SELECT * FROM felhasznalo
